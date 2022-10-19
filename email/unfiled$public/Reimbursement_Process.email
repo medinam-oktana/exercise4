@@ -1,0 +1,5 @@
+Hi {!CExpense__c.Receiver_Name__c}!
+
+We want to notify you that reimbursement process was approved and prepared.
+
+Total amount to reimburse:  ${!CExpense__c.Amount__c}.

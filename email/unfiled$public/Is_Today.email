@@ -1,0 +1,5 @@
+Hi {!User.FirstName}.
+
+Today is the last day to check the expense, make sure to review it.
+
+Deadline date: {!CExpense__c.Date__c + 15}.

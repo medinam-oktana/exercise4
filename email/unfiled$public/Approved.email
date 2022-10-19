@@ -1,0 +1,3 @@
+Hi {!User.FirstName}.
+
+The first review was approved correctly.

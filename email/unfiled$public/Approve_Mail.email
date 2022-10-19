@@ -1,0 +1,3 @@
+Hi {!User.FirstName}.
+
+There is a new expense to review, check it out at:

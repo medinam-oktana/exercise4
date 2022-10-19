@@ -1,0 +1,18 @@
+<apex:page controller="WorkItemController">
+    <apex:pageBlock title="Work Items related to the same Project and same Story Points">
+        <apex:form>
+        <apex:selectList value="{!selectedValue}" size="1">
+            <apex:selectOption itemValue="%" itemLabel="--All--"/>
+            <apex:selectOption itemValue="Not Started" itemLabel="Not Started"/>
+            <apex:selectOption itemValue="In Progress" itemLabel="In Progress"/>
+            <apex:selectOption itemValue="Done" itemLabel="Done"/>
+            <apex:actionSupport event="onchange" reRender="workItemList"/>
+        </apex:selectList>
+        </apex:form>
+        <apex:pageBlockSection columns="1" id="workItemList">
+        	<apex:repeat value="{! items}" var="wi">
+                <apex:outputLink value="/lightning/r/Work_Item__c/{!wi.Id}/view">{!wi.Name}</apex:outputLink>
+            </apex:repeat>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

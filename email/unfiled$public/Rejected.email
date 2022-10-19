@@ -1,0 +1,3 @@
+Hi {!User.FirstName}.
+
+The expense report that was submitted for approval was rejected.

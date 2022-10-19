@@ -1,0 +1,5 @@
+Hi {!User.FirstName}.
+
+3 days remaining for the process to end, make sure to review the expense report.
+
+Deadline date: {!CExpense__c.Date__c + 15}.
